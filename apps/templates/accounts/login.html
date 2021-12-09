@@ -21,7 +21,7 @@
                     {% if msg %}
                         {{ msg | safe }}
                     {% else %}
-                        Add your credentials
+                        Пожалуйста, заполните следующие поля для авторизации
                     {% endif %}                  
                 </p>
               </div>
@@ -30,11 +30,11 @@
                   
                   {{ form.hidden_tag() }}
 
-                  <label>Username</label>
+                  <label>Логин</label>
                   <div class="mb-3">
                     {{ form.username(placeholder="Username", class="form-control") }}
                   </div>
-                  <label>Password</label>
+                  <label>Пароль</label>
                   <div class="mb-3">
                     {{ form.password(placeholder="Password", class="form-control", type="password") }}
                   </div>
